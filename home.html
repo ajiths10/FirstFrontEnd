@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+        }
+        </style>
+</head>
+<body style="font-family:'Arial';background-image:url('https://iasri.icar.gov.in/wp-content/uploads/2017/05/parallax-bg.jpg') ;background-repeat: no-repeat;">
+    <form  action="#" onsubmit="onsignup(event)">
+
+    <div  style="width:600px;height:400px; border: 10px solid rgb(0, 225, 255); center;background-color:rgba(0, 225, 255, 0.11) ">
+
+    <h1 style="text-align: center;"> Book a call</h1>
+<br>
+<p>Book a call slotand our representative will call you within 1hour of selected time.</p>
+<hr>
+<br>
+<label>Name:</label><br>
+<input type="text" name="username"size="75px">
+<br>
+<label>Email:</label><br>
+<input type="email" name="emailid" size="75px"><br>
+<label>Phone:</label><br>
+<input type ="number" name="phnumber"size="75px"><br>
+<label>Time for call:</label>
+<br>
+<input type="date"> 
+<input type="time">
+<br>
+<br>
+<button type="submit" size="100px" style="background-color: rgb(255, 172, 172);  ">Submit</button>
+</div>
+    <script>
+        function onsignup(event){
+            event.preventDefault();
+
+                console.log(event.target.username.value)
+                console.log('Hello world');
+        }
+    </script>
+    </form>
+</body>
+</html>
